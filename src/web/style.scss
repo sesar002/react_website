@@ -29,10 +29,57 @@ h2 {
 //_____________________________________________HOME_________________________________________________________________
 
 .home {
+  display: flex;
+  justify-content: center;
   padding-top: 80px;
   background: $bgrcolor1;
   width: 100%;
   height: 1000px;
+}
+
+.coin {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin: 2rem 0rem;
+  transform-style: preserve-3d;
+}
+
+@media screen and (max-width: 600px) {
+  .coin {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+.coin div {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  backface-visibility: hidden;
+  background-size: contain;
+  position: absolute;
+}
+
+.front {
+  background: url("../images/coin-removebg-preview.png") no-repeat;
+  animation: rotateCoin 2s infinite linear;
+}
+
+.back {
+  background: url("../images/coin-removebg-preview.png") no-repeat;
+  animation: rotateCoin 2s infinite linear;
+  transform: rotateY(90deg);
+  animation-delay: 1s;
+}
+
+@keyframes rotateCoin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
 }
 
 //_____________________________________________TOKENOMICS_________________________________________________________________
@@ -62,7 +109,7 @@ h2 {
 .tokebox {
   text-align: center;
   border-radius: 30px;
-  margin: 10px;
+  margin: 20px 10px;
   padding: 10px;
   width: 200px;
   height: 180px;
