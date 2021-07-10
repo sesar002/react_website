@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./style.scss";
 import Sidebar from "./sidebar/Sidebar";
 import Home from "./pages/Home";
-import Tokenomics from "./pages/Tokenomics";
+import Tokenomics from "./pages/tokenomics/Tokenomics";
 import Roadmap from "./pages/Roadmap";
 import Team from "./pages/Team";
 
@@ -18,10 +18,14 @@ const Main = () => {
     <>
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
-      <Home id="home" />
-      <Tokenomics id="tokenomics" />
-      <Roadmap id="roadmap" />
-      <Team id="team" />
+      <div id="home" className="navigate" />
+      <Home />
+      <div id="tokenomics" className="navigate" />
+      <Tokenomics />
+      <div id="roadmap" className="navigate" />
+      <Roadmap />
+      <div id="team" className="navigate" />
+      <Team />
     </>
   );
 };
