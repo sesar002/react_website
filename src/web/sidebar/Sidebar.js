@@ -24,7 +24,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             spy={true}
             smooth={true}
           >
-            Tokenomics
+            Pumpenomics
           </SidebarLink>
           <SidebarLink to="roadmap" onClick={toggle} spy={true} smooth={true}>
             Roadmap

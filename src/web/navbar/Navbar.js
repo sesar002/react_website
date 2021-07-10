@@ -26,7 +26,7 @@ const Navbar = ({ toggle }) => {
           <NavMenu>
             <NavItem>
               <NavLinks to="tokenomics" spy={true} smooth={true}>
-                Tokenomics
+                Pumpenomics
               </NavLinks>
             </NavItem>
             <NavItem>
