@@ -52,33 +52,72 @@ h2 {
   }
 }
 
-.coin div {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  backface-visibility: hidden;
-  background-size: contain;
+$coin-diameter: 600px;
+$coin-thickness: 20px;
+$coin-color: #e8d0bb;
+$coin-front: "../images/logo.png";
+$coin-back: "../images/logo.png";
+$edge-faces: 80;
+$edge-face-length: 3.14 * $coin-diameter/$edge-faces;
+$turn-time: 8s;
+
+.coin {
+  position: relative;
+  width: $coin-diameter;
+  height: $coin-diameter;
+  margin: 50px auto;
+  transform-style: preserve-3d;
+  animation: rotate3d $turn-time linear infinite;
+  transition: all 0.3s;
+  max-width: 600px;
+}
+
+.coin__front {
   position: absolute;
-}
+  width: $coin-diameter;
+  height: $coin-diameter;
+  border-radius: 50%;
+  overflow: hidden;
 
-.front {
-  background: url("../images/coin-removebg-preview.png") no-repeat;
-  animation: rotateCoin 2s infinite linear;
-}
-
-.back {
-  background: url("../images/coin-removebg-preview.png") no-repeat;
-  animation: rotateCoin 2s infinite linear;
-  transform: rotateY(90deg);
-  animation-delay: 1s;
-}
-
-@keyframes rotateCoin {
-  from {
-    transform: rotateY(0deg);
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    display: block;
+    height: $coin-diameter/1.5;
+    width: $coin-diameter * 2;
+    background: #fff;
   }
-  to {
-    transform: rotateY(360deg);
+}
+
+.coin__front {
+  background-image: url($coin-front);
+  background-size: cover;
+  background-position: center;
+}
+
+@keyframes rotate3d {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+
+  100% {
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .coin {
+    width: 100vw;
+    height: 100vw;
+  }
+  .coin__front {
+    width: 100vw;
+    height: 100vw;
+    &:after {
+      height: 100vw/1.5;
+      width: 100vw * 2;
+    }
   }
 }
 
