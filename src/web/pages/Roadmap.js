@@ -7,19 +7,22 @@ const Roadmap = () => {
     <div className="roadmap">
       <h1>Roadmap</h1>
 
-      <Timeline lineColor={"#ddd"}>
+      <Timeline lineColor={"black"}>
         <TimelineItem
           key="001"
           dateText="PHASE 1"
-          dateInnerStyle={{ background: "#61b8ff", color: "#000" }}
+          dateInnerStyle={{
+            background: "#019d38",
+            color: "#000",
+          }}
           bodyContainerStyle={{
-            background: "#3c2db9",
+            background: "#000",
             padding: "20px",
             borderRadius: "8px",
             boxShadow: "0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2)",
           }}
         >
-          <h3 style={{ color: "#61b8ff" }}>BEFORE LAUNCH</h3>
+          <h3 style={{ color: "#ff0000" }}>BEFORE LAUNCH</h3>
           <p>Set up Telegram</p>
           <p>Launch Website</p>
           <p>Social Media Launch</p>
@@ -27,15 +30,15 @@ const Roadmap = () => {
         <TimelineItem
           key="002"
           dateText="PHASE 2"
-          dateInnerStyle={{ background: "#61b8ff", color: "#000" }}
+          dateInnerStyle={{ background: "#ff0000", color: "#000" }}
           bodyContainerStyle={{
-            background: "#3c2db9",
+            background: "#000",
             padding: "20px",
             borderRadius: "8px",
             boxShadow: "0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2)",
           }}
         >
-          <h3 style={{ color: "#61b8ff" }}>TOKEN LAUNCH</h3>
+          <h3 style={{ color: "#ff0000" }}>TOKEN LAUNCH</h3>
           <p>Reddit CMS Posts</p>
           <p>Launch Integrity Presale</p>
           <p>Launch Integrity On PancakeSwap</p>
@@ -49,15 +52,15 @@ const Roadmap = () => {
         <TimelineItem
           key="003"
           dateText="PHASE 3"
-          dateInnerStyle={{ background: "#61b8ff", color: "#000" }}
+          dateInnerStyle={{ background: "#ff0000", color: "#000" }}
           bodyContainerStyle={{
-            background: "#3c2db9",
+            background: "#000",
             padding: "20px",
             borderRadius: "8px",
             boxShadow: "0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2)",
           }}
         >
-          <h3 style={{ color: "#61b8ff" }}>2 WEEKS AFTER LAUNCH</h3>
+          <h3 style={{ color: "#ff0000" }}>2 WEEKS AFTER LAUNCH</h3>
           <p>
             Huge push via Influencer Marketing on Youtube, Twitter, Reddit, Tik
             Tok and much more
@@ -73,18 +76,17 @@ const Roadmap = () => {
           key="004"
           dateText="PHASE 4"
           dateInnerStyle={{
-            border: "none",
-            background: "#61b8ff",
+            background: "#ff0000",
             color: "#000",
           }}
           bodyContainerStyle={{
-            background: "#3c2db9",
+            background: "#000",
             padding: "20px",
             borderRadius: "8px",
             boxShadow: "0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2)",
           }}
         >
-          <h3 style={{ color: "#61b8ff" }}>1 MOUNTH AFTER LAUNCH</h3>
+          <h3 style={{ color: "#ff0000" }}>1 MOUNTH AFTER LAUNCH</h3>
           <p>Production Of NFTs for Integrity</p>
           <p>Giveaway Of NFTs For Integrity Holders</p>
           <p>100.000 $PUMPDOGE holders</p>

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-scroll";
 
 export const Nav = styled.nav`
-  background: #000e43;
+  background: #000;
   width: 100%;
   height: 80px;
   display: flex;
@@ -81,8 +81,8 @@ export const NavLinks = styled(Link)`
   cursor: pointer;
 
   &:hover {
-    color: #0014ff;
-    border-bottom: #0014ff solid 3px;
+    color: #ff0000;
+    border-bottom: #ff0000 solid 3px;
   }
 `;
 
@@ -97,7 +97,7 @@ export const NavBtn = styled.div`
 
 export const NavBtnLink = styled.a`
   border-radius: 50px;
-  background: #0014ff;
+  background: #ff0000;
   white-space: nowrap;
   padding: 10px 22px;
   color: white;
@@ -111,6 +111,6 @@ export const NavBtnLink = styled.a`
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #fff;
-    color: #0014ff;
+    color: black;
   }
 `;
