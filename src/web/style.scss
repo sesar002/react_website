@@ -10,6 +10,9 @@ $color2: #f58549;
   font-family: sans-serif;
   color: white;
 }
+body {
+  background: #3a3a3a;
+}
 
 h1 {
   text-align: center;
@@ -35,7 +38,6 @@ h2 {
   align-items: center;
   flex-direction: column;
   padding-top: 80px;
-  background: $bgrcolor1;
   width: 100%;
 }
 
@@ -52,7 +54,7 @@ $turn-time: 8s;
   position: relative;
   width: $coin-diameter;
   height: $coin-diameter;
-  margin: 50px auto;
+  margin: 40px auto;
   transform-style: preserve-3d;
   //animation: rotate3d $turn-time linear infinite;
   transition: all 0.3s;
@@ -104,17 +106,17 @@ $turn-time: 8s;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .coin {
-    width: 100vw;
-    height: 100vw;
+    width: 80vw;
+    height: 80vw;
   }
   .coin__front {
-    width: 100vw;
-    height: 100vw;
+    width: 80vw;
+    height: 80vw;
     &:after {
-      height: 100vw/1.5;
-      width: 100vw * 2;
+      height: 80vw/1.5;
+      width: 80vw * 2;
     }
   }
   .pulsate {
@@ -129,7 +131,7 @@ $turn-time: 8s;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  box-shadow: 0px 0px 40px 9px rgba(0, 0, 0, 0.82);
+  box-shadow: 0px 0px 15px 1px white;
   background: $bgrcolor2;
   width: 100%;
   padding: 10px;
@@ -171,7 +173,6 @@ $turn-time: 8s;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  background: $bgrcolor1;
   width: 100%;
 }
 
@@ -183,6 +184,7 @@ $turn-time: 8s;
   align-items: center;
   flex-direction: column;
   background: $bgrcolor2;
+  box-shadow: 0px 0px 15px 1px white;
   width: 100%;
 }
 
@@ -204,7 +206,7 @@ $turn-time: 8s;
   margin: 20px 10px;
   padding: 10px;
   width: 300px;
-  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.82);
+  box-shadow: 0px 0px 15px 1px #ff0000d1;
   background: #747474;
   .imgdiv {
     width: 90%;
@@ -217,6 +219,14 @@ $turn-time: 8s;
   span {
     font-weight: bold;
     margin-bottom: 10px;
+  }
+  p {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .teambox {
+    width: 250px;
   }
 }
 
@@ -244,8 +254,17 @@ $turn-time: 8s;
   background: url(../images/dogo6.png) no-repeat center;
   background-size: contain;
 }
-@media screen and (max-width: 350px) {
-  .teambox {
-    width: 250px;
+//_____________________________________________TEAM_________________________________________________________________
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1100px;
+  p {
+    text-align: center;
+    width: 100%;
+    margin: 10px 0;
   }
 }

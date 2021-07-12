@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Tokenomics from "./pages/tokenomics/Tokenomics";
 import Roadmap from "./pages/Roadmap";
 import Team from "./pages/Team";
+import Footer from "./pages/Footer";
 
 const Main = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,6 +27,7 @@ const Main = () => {
       <Roadmap />
       <div id="team" className="navigate" />
       <Team />
+      <Footer />
     </>
   );
 };
