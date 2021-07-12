@@ -10,7 +10,7 @@ const Roadmap = () => {
       <Timeline lineColor={"#ddd"}>
         <TimelineItem
           key="001"
-          dateText="BEFORE LAUNCH"
+          dateText="PHASE 1"
           dateInnerStyle={{ background: "#61b8ff", color: "#000" }}
           bodyContainerStyle={{
             background: "#3c2db9",
@@ -19,14 +19,14 @@ const Roadmap = () => {
             boxShadow: "0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2)",
           }}
         >
-          <h3 style={{ color: "#61b8ff" }}>PHASE 1</h3>
+          <h3 style={{ color: "#61b8ff" }}>BEFORE LAUNCH</h3>
           <p>Set up Telegram</p>
           <p>Launch Website</p>
           <p>Social Media Launch</p>
         </TimelineItem>
         <TimelineItem
           key="002"
-          dateText="TOKEN LAUNCH"
+          dateText="PHASE 2"
           dateInnerStyle={{ background: "#61b8ff", color: "#000" }}
           bodyContainerStyle={{
             background: "#3c2db9",
@@ -35,7 +35,7 @@ const Roadmap = () => {
             boxShadow: "0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2)",
           }}
         >
-          <h3 style={{ color: "#61b8ff" }}>PHASE 2</h3>
+          <h3 style={{ color: "#61b8ff" }}>TOKEN LAUNCH</h3>
           <p>Reddit CMS Posts</p>
           <p>Launch Integrity Presale</p>
           <p>Launch Integrity On PancakeSwap</p>
@@ -48,7 +48,7 @@ const Roadmap = () => {
         </TimelineItem>
         <TimelineItem
           key="003"
-          dateText="2 WEEKS AFTER LAUNCH"
+          dateText="PHASE 3"
           dateInnerStyle={{ background: "#61b8ff", color: "#000" }}
           bodyContainerStyle={{
             background: "#3c2db9",
@@ -57,7 +57,7 @@ const Roadmap = () => {
             boxShadow: "0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2)",
           }}
         >
-          <h3 style={{ color: "#61b8ff" }}>PHASE 3</h3>
+          <h3 style={{ color: "#61b8ff" }}>2 WEEKS AFTER LAUNCH</h3>
           <p>
             Huge push via Influencer Marketing on Youtube, Twitter, Reddit, Tik
             Tok and much more
@@ -71,7 +71,7 @@ const Roadmap = () => {
         </TimelineItem>
         <TimelineItem
           key="004"
-          dateText="1 MOUNTH AFTER LAUNCH"
+          dateText="PHASE 4"
           dateInnerStyle={{
             border: "none",
             background: "#61b8ff",
@@ -84,7 +84,7 @@ const Roadmap = () => {
             boxShadow: "0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2)",
           }}
         >
-          <h3 style={{ color: "#61b8ff" }}>PHASE 4</h3>
+          <h3 style={{ color: "#61b8ff" }}>1 MOUNTH AFTER LAUNCH</h3>
           <p>Production Of NFTs for Integrity</p>
           <p>Giveaway Of NFTs For Integrity Holders</p>
           <p>100.000 $PUMPDOGE holders</p>

@@ -7,6 +7,7 @@ const Home = () => {
       <div className="coin">
         <div className="coin__front"></div>
       </div>
+      <p className="pulsate">PUMP PUMP</p>
     </div>
   );
 };
