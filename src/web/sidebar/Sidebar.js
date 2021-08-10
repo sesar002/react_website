@@ -18,6 +18,9 @@ const Sidebar = ({ isOpen, toggle }) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
+          <SidebarLink to="team" onClick={toggle} spy={true} smooth={true}>
+            Team
+          </SidebarLink>
           <SidebarLink
             to="tokenomics"
             onClick={toggle}
@@ -29,12 +32,9 @@ const Sidebar = ({ isOpen, toggle }) => {
           <SidebarLink to="roadmap" onClick={toggle} spy={true} smooth={true}>
             Roadmap
           </SidebarLink>
-          <SidebarLink to="team" onClick={toggle} spy={true} smooth={true}>
-            Team
-          </SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
-          <SidebarRoute>Buy Now</SidebarRoute>
+          <SidebarRoute href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0xab36f4334ec6df38c4ec0fb5ea597bb0336979e3" target="a_blank">Buy Now</SidebarRoute>
         </SideBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>

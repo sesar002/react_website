@@ -9,8 +9,14 @@ const Team = () => {
         <div className="teambox">
           <div className="imgdiv img2"></div>
           <h3>King</h3>
-          <span>Founter</span>
+          <span>Founder</span>
           <p>Main speciality solidity contracts</p>
+        </div>
+        <div className="teambox">
+          <div className="imgdiv img7"></div>
+          <h3>Ari</h3>
+          <span>Co-Founder</span>
+          <p>All talk</p>
         </div>
         <div className="teambox">
           <div className="imgdiv img1"></div>
@@ -38,7 +44,7 @@ const Team = () => {
         </div>
         <div className="teambox">
           <div className="imgdiv img6"></div>
-          <h3>Boxer</h3>
+          <h3>Floky</h3>
           <span>Dev and Design</span>
           <p>Web design and front-end</p>
         </div>

@@ -37,6 +37,7 @@ export const NavLogo = styled(Link)`
   margin-left: 24px;
   font-weight: bold;
   text-decoration: none;
+  font-family: "Bitter", serif;
   z-index: 500;
 `;
 
@@ -46,10 +47,10 @@ export const MobileIcon = styled.div`
   @media screen and (max-width: 768px) {
     display: block;
     position: absolute;
-    top: 0;
+    top: 5px;
     right: 0;
     transform: translate(-100%, 75%);
-    font-size: 1.8rem;
+    font-size: 24px;
     color: #fff;
     cursor: pointer;
     z-index: 500;
@@ -57,6 +58,7 @@ export const MobileIcon = styled.div`
 `;
 
 export const NavMenu = styled.ul`
+  align-self: center;
   display: flex;
   align-items: center;
   list-style: none;
@@ -102,6 +104,7 @@ export const NavBtnLink = styled.a`
   padding: 10px 22px;
   color: white;
   font-size: 16px;
+  font-weight: bold;
   outline: none;
   border: none;
   cursor: pointer;

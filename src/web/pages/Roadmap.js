@@ -7,19 +7,13 @@ const Roadmap = () => {
     <div className="roadmap">
       <h1>Roadmap</h1>
 
-      <Timeline lineColor={"black"}>
+      <Timeline lineColor={"white"}>
         <TimelineItem
           key="001"
           dateText="PHASE 1"
           dateInnerStyle={{
             background: "#019d38",
             color: "#000",
-          }}
-          bodyContainerStyle={{
-            background: "#000",
-            padding: "20px",
-            borderRadius: "8px",
-            boxShadow: "0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2)",
           }}
         >
           <h3 style={{ color: "#ff0000" }}>BEFORE LAUNCH</h3>
@@ -31,12 +25,6 @@ const Roadmap = () => {
           key="002"
           dateText="PHASE 2"
           dateInnerStyle={{ background: "#ff0000", color: "#000" }}
-          bodyContainerStyle={{
-            background: "#000",
-            padding: "20px",
-            borderRadius: "8px",
-            boxShadow: "0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2)",
-          }}
         >
           <h3 style={{ color: "#ff0000" }}>TOKEN LAUNCH</h3>
           <p>Reddit CMS Posts</p>
@@ -53,12 +41,6 @@ const Roadmap = () => {
           key="003"
           dateText="PHASE 3"
           dateInnerStyle={{ background: "#ff0000", color: "#000" }}
-          bodyContainerStyle={{
-            background: "#000",
-            padding: "20px",
-            borderRadius: "8px",
-            boxShadow: "0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2)",
-          }}
         >
           <h3 style={{ color: "#ff0000" }}>2 WEEKS AFTER LAUNCH</h3>
           <p>
@@ -78,12 +60,6 @@ const Roadmap = () => {
           dateInnerStyle={{
             background: "#ff0000",
             color: "#000",
-          }}
-          bodyContainerStyle={{
-            background: "#000",
-            padding: "20px",
-            borderRadius: "8px",
-            boxShadow: "0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2)",
           }}
         >
           <h3 style={{ color: "#ff0000" }}>1 MOUNTH AFTER LAUNCH</h3>

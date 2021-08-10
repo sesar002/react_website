@@ -25,6 +25,11 @@ const Navbar = ({ toggle }) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
+              <NavLinks to="team" spy={true} smooth={true}>
+                Team
+              </NavLinks>
+            </NavItem>
+            <NavItem>
               <NavLinks to="tokenomics" spy={true} smooth={true}>
                 Pumpenomics
               </NavLinks>
@@ -34,14 +39,9 @@ const Navbar = ({ toggle }) => {
                 Roadmap
               </NavLinks>
             </NavItem>
-            <NavItem>
-              <NavLinks to="team" spy={true} smooth={true}>
-                Team
-              </NavLinks>
-            </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink href="">Buy Now</NavBtnLink>
+            <NavBtnLink href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0xab36f4334ec6df38c4ec0fb5ea597bb0336979e3" target="a_blank">BUY NOW</NavBtnLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>
