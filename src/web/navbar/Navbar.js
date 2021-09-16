@@ -18,7 +18,7 @@ const Navbar = ({ toggle }) => {
       <Nav>
         <NavbarContainer>
           <NavLogo to="home" spy={true} smooth={true}>
-            PUMP DOGE
+            OTKUP VOZILA
           </NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
@@ -41,7 +41,12 @@ const Navbar = ({ toggle }) => {
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0xab36f4334ec6df38c4ec0fb5ea597bb0336979e3" target="a_blank">BUY NOW</NavBtnLink>
+            <NavBtnLink
+              href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0xab36f4334ec6df38c4ec0fb5ea597bb0336979e3"
+              target="a_blank"
+            >
+              BUY NOW
+            </NavBtnLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>
