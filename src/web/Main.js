@@ -1,13 +1,10 @@
-import Navbar from "./navbar/Navbar";
 import { useState } from "react";
 import "./style.scss";
-import Sidebar from "./sidebar/Sidebar";
 import Home from "./pages/Home";
 import Tokenomics from "./pages/tokenomics/Tokenomics";
 import Roadmap from "./pages/Roadmap";
 import Team from "./pages/Team";
 import Footer from "./pages/Footer";
-import Social from "./pages/Social";
 
 const Main = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,17 +15,20 @@ const Main = () => {
 
   return (
     <>
-      <Sidebar isOpen={isOpen} toggle={toggle} />
-      <Navbar toggle={toggle} />
-      <div id="home" className="navigate" />
+      <nav className="navbar">
+        <div className="navcont">
+          <p>KONTAKTIRAJTE NAS</p>
+          <a href="tel:+385955407662" className="phone"></a>
+          <a
+            href="https://api.whatsapp.com/send?phone=+385955407662"
+            className="wapp"
+          ></a>
+        </div>
+      </nav>
       <Home />
-      <Social />
-      <div id="team" className="navigate" />
       <Team />
-      <div id="tokenomics" className="navigate" />
-      <Tokenomics />
-      <div id="roadmap" className="navigate" />
       <Roadmap />
+      <Tokenomics />
       <Footer />
     </>
   );

@@ -4,49 +4,37 @@ import "../style.scss";
 const Team = () => {
   return (
     <div className="team">
-      <h1>Our Team</h1>
       <div className="teamcont">
         <div className="teambox">
-          <div className="imgdiv img2"></div>
-          <h3>King</h3>
-          <span>Founder</span>
-          <p>Main speciality solidity contracts</p>
+          <h3>ISPLATA ODMAH!</h3>
+          <p>
+            Otkupljene automobile isplaćujemo odmah i to na licu mjesta, a otkup
+            vršimo na području cijele Republike Hrvatske.
+          </p>
         </div>
         <div className="teambox">
-          <div className="imgdiv img7"></div>
-          <h3>Ari</h3>
-          <span>Co-Founder</span>
-          <p>All talk</p>
+          <h3>OTKUP VOZILA</h3>
+          <p>
+            Imate auto, a ne znate što bi s njim? Kontaktirajte nas na broj{" "}
+            <a href="tel:+385955407662">
+              <b>+385 95 5407 662</b>
+            </a>{" "}
+            i otkupit ćemo ga po većoj cijeni od ostalih.
+          </p>
         </div>
         <div className="teambox">
-          <div className="imgdiv img1"></div>
-          <h3>LilPumper</h3>
-          <span>Marketing</span>
-          <p>Marketing expert. Also good boi.</p>
+          <h3>TROŠKOVI PRIJENOSA</h3>
+          <p>
+            Kod nas se ne morate brinuti o troškovima prijenosa! Sve troškove
+            snosimo mi!
+          </p>
         </div>
         <div className="teambox">
-          <div className="imgdiv img3"></div>
-          <h3>Ares</h3>
-          <span>Visionary</span>
-          <p>Plays fetch with yo finger</p>
-        </div>
-        <div className="teambox">
-          <div className="imgdiv img4"></div>
-          <h3>420 Kenny</h3>
-          <span>Fud Executioner</span>
-          <p>Does nothing</p>
-        </div>
-        <div className="teambox">
-          <div className="imgdiv img5"></div>
-          <h3>Roxie</h3>
-          <span>PumpDev</span>
-          <p>G.I. doge. Retired now.</p>
-        </div>
-        <div className="teambox">
-          <div className="imgdiv img6"></div>
-          <h3>Floky</h3>
-          <span>Dev and Design</span>
-          <p>Web design and front-end</p>
+          <h3>ŠTO OTKUPLJUJEMO</h3>
+          <p>
+            Otkupljujemo sva vozila, novija i starija, bez obzira na godište,
+            model ili marku.
+          </p>
         </div>
       </div>
     </div>
